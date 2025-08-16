@@ -18,7 +18,7 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Command
 
 from prompts import clarify_with_user_instructions, transform_messages_into_research_topic_prompt
-from state_scope import AgentState, ClarifyWithUser, ResearchQuestion, AgentInputState
+from scope_management.state_scope import AgentState, ClarifyWithUser, ResearchQuestion, AgentInputState
 
 
 

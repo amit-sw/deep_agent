@@ -35,13 +35,10 @@ os.environ["LANGCHAIN_PROJECT"] = "ArrowStreet"
 
 from utils import show_prompt
 from prompts import clarify_with_user_instructions
-from research_agent_scope import scope_research
-from state_scope import AgentState
-
-#show_prompt(clarify_with_user_instructions, "Clarify with User Instructions")
-
+from scope_management.research_agent_scope import scope_research, deep_researcher_builder
+from scope_management.state_scope import AgentState
 from langgraph.checkpoint.memory import InMemorySaver
-from research_agent_scope import deep_researcher_builder
+
 
 def save_scope_graph_png(path: str = "scope_graph.png"):
     checkpointer = InMemorySaver()
