@@ -8,3 +8,4 @@ langchain-openai
 langchain
 langchain-tavily
 tavily-python
+langchain_mcp_adapters
